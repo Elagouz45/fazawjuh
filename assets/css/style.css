@@ -151,12 +151,14 @@ input[type="radio"] {
 
 .home-form-section .item-card .statics {
     margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .home-form-section .item-card .statics .statics-content {
     background-color: rgba(242, 240, 251, 1);
     border-radius: 32px;
-    padding: 5px 20px;
+    padding: 5px 10px;
 }
 
 .home-form-section .item-card .card-headline {

@@ -54,7 +54,7 @@
             <h4 class="headline">نبحث لك عن شريكة حياتك
             </h4>
             <form id="filterContainer">
-                <div id="filter_row" class="row filter-row mb-100px row-gap-24">
+                <div class="row filter-row mb-5 row-gap-24">
                     <div class="col-lg-3 col-sm-6 col-12">
                         <label>الجنسية *</label>
                         <select class="form-control js-example-basic-multiple-limit">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-end align-items-end ">
                         <div class="filter-icons-section">
-                            <a href="#"class="filter-icon">
+                            <a class="filter-icon" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 <img  id="add_custom_filter"  height="20" src="assets/images/img_5.png">
                             </a>
                             <a href="#" class="btn search-btn">
@@ -87,6 +87,32 @@
                                 بحث </a>
                         </div>
 
+                    </div>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="row filter-row mb-100px row-gap-24">
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <label>الجنسية *</label>
+                            <select class="form-control js-example-basic-multiple-limit">
+                                <option></option>
+                                <option>white</option>
+                                <option>purple</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <label>الحالة الاجتماعية *</label>
+                            <select class="form-control js-example-basic-multiple-limit">
+                                <option>white</option>
+                                <option>purple</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <label>السن *</label>
+                            <select class="form-control js-example-basic-multiple-limit">
+                                <option>white</option>
+                                <option>purple</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </form>
