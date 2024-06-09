@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="banner">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">
+                    <img height="61" width="96" src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">إضافة استمارة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عن المبادرة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تبرع للمبادرة</a>
+                        </li>
+                    </ul>
+                    <button class="btn add-btn d-lg-block d-none">إضافة حساب</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="form-progress-bar">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="information-bar col">
+                        <div class="progress ">
+                        </div>
+                        <div class="progress-title ">
+                            <img src="./assets/images/my-information-svgrepo-com 1.png" alt="المعلومات الأساسية">
+                            <p>المعلومات الأساسية</p>
+                        </div>
+                    </div>
+                    <div class="husband-question-bar col">
+                        <div class="progress ">
+                        </div>
+                        <div class="progress-title ">
+                            <img src="./assets/images/Vector.png" alt="أسئلة متعلقه بالزوجة ">
+                            <p>الزوج المستقبلي </p>
+                        </div>
+                    </div>
+
+                    <div class="family-bar col">
+                        <div class="progress ">
+                        </div>
+                        <div class="progress-title ">
+                            <img src="./assets/images/family-silhouette-svgrepo-com 1.png" alt="معلومات عن عائلتك ">
+                            <p> معلومات عن عائلتك</p>
+                        </div>
+                    </div>
+                    <div class="wife-family-bar col">
+                        <div class="progress ">
+                        </div>
+                        <div class="progress-title ">
+                            <img src="./assets/images/group-svgrepo-com 1.png" alt="معلومات عن عائلة زوجتك ">
+                            <p>معلومات عن عائلة زوجك </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg">
+            <div class="inputs-information">
+                <form>
+                    <!-- basic-man-information-section -->
+                    <div class="info d-none basic-man-information">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="information-heading">
+                                    <h1>
+                                        <span>1</span>
+                                        المعلومات الأساسية
+                                    </h1>
+                                    <span>هذا القسم لن يطلع عليه أحد غيرنا إلا في حالة التوافق بعد الموافقة
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-12">
+                                <div class="status inputs-style">
+                                    <label for="status"> الحالة الاجتماعية
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="status" class="form-control js-example-basic-multiple-limit">
+                                        <option></option>
+                                        <option>اعزب</option>
+                                        <option>ارمل</option>
+                                        <option>متزوج</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-sm-6 col-12">
+                                <div class="wife-number inputs-style">
+                                    <label for="number"> للمطلق والمتزوج والأرمل فقط ، عدد الزيجات السابقة</label>
+                                    <input type="number" name="number" placeholder="عدد الزيجات">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> ماذا يقول الناس عنك ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder="ماذا يقول الناس عنك "></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> المنطقة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>القاهره</option>
+                                        <option>الجيزه </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="city inputs-style">
+                                    <label for="city"> المدينة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="city" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>اسكندريه</option>
+                                        <option>اسماعيليه</option>
+                                        <option>الاقصر</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="country inputs-style">
+                                    <label for="country"> الدولة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="country" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>مصر</option>
+                                        <option>الاردن</option>
+                                        <option>المغرب</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="money inputs-style">
+                                    <label for="money"> مستوي الجمال
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="money" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>متوسط الدخل</option>
+                                        <option>محدود الدخل </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="birthday inputs-style">
+                                    <label for="birthday"> تاريخ الميلاد
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="date" name="birthday" placeholder="21/4/1998">
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="nationality inputs-style">
+                                    <label for="nationality"> الجنسية
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="nationality" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>مصرى</option>
+                                        <option>اردنى</option>
+                                        <option>مغربى</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="face inputs-style">
+                                    <label for="face">لون البشره ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="face" class="form-control js-example-basic-multiple-limit">
+                                        <option></option>
+                                        <option> بدون</option>
+                                        <option>كثيفه </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="weight inputs-style">
+                                    <label for="weight"> الوزن
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="number" name="weight" placeholder="100">
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="height inputs-style">
+                                    <label for="height"> الطول
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="number" name="height" placeholder="150">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-6 col-12">
+                                <div class="hygiene inputs-style">
+                                    <label for="hygiene"> لون العيون؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select class="form-control js-example-basic-multiple-limit" name="hygiene">
+                                        <option>اختر من القائمة</option>
+                                        <option> مهتم جدا </option>
+                                        <option>ممتازه </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-6 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-6 col-12">
+                                <div class="hygiene inputs-style">
+                                    <label for="hygiene"> طبيعة اللباس؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select class="form-control js-example-basic-multiple-limit" name="hygiene">
+                                        <option>اختر من القائمة</option>
+                                        <option> مهتم جدا </option>
+                                        <option>ممتازه </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-6 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> والجسديةالحالة الصحية العامة
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="الحالة الصحية العامة والجسدية "></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working"> هل لديكِ روتين عناية شخصية ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="divorce inputs-style">
+                                    <label for="divorce"> في حال كنتِ مطلقة، ما نوع الطلاق الواقع ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="divorce" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>نعم</option>
+                                        <option>لا</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-122 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> أسباب الطلاق
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder=" ما هي المشاكل القضائية السابقة "></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working"> هل أنتِ عاملة؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working"> في حال كنتِ عاملة ، هل ستتركين العمل بعد الزواج ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> مستوي التعليم؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder="مستوي التعليم"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working"> هل عليك أي مشاكل قضائية سابقة؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="islamic1 inputs-style">
+                                    <label for="islamic1"> ما مدي التزامك ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="islamic1" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="islamic2 inputs-style">
+                                    <label for="islamic2"> كيف هي صلاتكِ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="islamic2" class="form-control js-example-basic-multiple-limit">
+                                        <option></option>
+                                        <option>ملتزم </option>
+                                        <option>جيد</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="islamic inputs-style">
+                                    <label for="islamic"> هل تلتزم بأذكار الصباح والمساء ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="islamic" class="form-control js-example-basic-multiple-limit">
+                                        <option></option>
+                                        <option>نعم </option>
+                                        <option>جيد</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12  col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment">
+                                        كم تحفظين من القرآن
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input type="text" name="comment" placeholder="كم تحفظين من القرآن ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="film inputs-style">
+                                    <label for="film"> هل تشاهد الأفلام والمسلسلات؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="film" class="form-control js-example-basic-multiple-limit">
+                                        <option></option>
+                                        <option>نعم </option>
+                                        <option>جيد</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> طريقة الزواج المفضلة ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> كيف تعبرين عن غضبك ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder="كيف تعبرين عن غضبك"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> كيف تصنفين نفسكِ ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder="كيف تصنفين نفسكِ  "></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage">هل تسامحين بسهولة؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> ما مدي التنظيم في حياتك ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> ما مدى طاعتك لوالدتك؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تقبلين التعدد ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> في حال قام زوجك بالتعدد، هل ستقبلين الأمر؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تحبين الأجواء العائلية والجمعات؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> ما مدى التزامك بقراراتك؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تتابعين الرجال على السوشال ميديا؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تمانعين تربية القطط في المنزل ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل لديكِ أي أنشطة دعوية ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تتناولين مشروبات الطاقة أو مكملات غذائية؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> من هم الدعاة والشيوخ الذين تتابعينهم على السوشال ميديا
+                                        (إن كانوا نساء أو رجال) ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="من هم الدعاة والشيوخ الذين تتابعينهم على السوشال ميديا (إن كانوا نساء أو رجال)  "></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> ماهو هدفك من الزواج بصراحة دون مثالية بالاجابة ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="ماهو هدفك من الزواج بصراحة دون مثالية بالاجابة ؟"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> هل لديك اي امراض مزمنة ؟ اذكرها ان وجد
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="هل لديك اي امراض مزمنة ؟ اذكرها ان وجد "></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> ما رأيك بمقولة - المرأة ليست مجبرة على خدمة زوجها
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="ما رأيك بمقولة - المرأة ليست مجبرة على خدمة زوجها  "></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> هل لديكِ أي شروط في الزواج؟ (اذكريها):
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea"
+                                        placeholder="هل لديكِ أي شروط في الزواج؟ (اذكريها): "></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> كم لغة تتكلمين
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder=" كم لغة تتكلمين  "></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- future-husband-section -->
+                    <div class="info d-none future-husband">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="information-heading">
+                                    <h1>
+                                        <span>2</span>
+                                        الزوج المستقبلي
+                                    </h1>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> حالة الرجل الذي تقبلين الزواج منه 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> العمر من
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> العمر الي 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> مستوى التعليم
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين اختلاطه بالنساء في العمل ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل توافقين على عمله بالدعوة ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين بمنعكِ من المبيت خارج المنزل ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين بمنعكِ من الخروج وحدكِ من المنزل؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area">كيف تفضلين لباس الرجل الذي تريدين الزواج منه ؟  
+                                        <span class="required">*</span>
+                                    </label>
+                                  <input type="text" name="marriage" >
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين بالجنسيات الأخرى غير الأردنية ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين بالسكن مع أهل زوجك ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4  col-sm-6 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين بشرط ترك العمل ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> 
+                                        هل تشترطين السكن في محافظة معينة بعد الزواج ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="area inputs-style">
+                                    <label for="area"> هل تقبلين أن يتدخل في لبسكِ خارج البيت ؟  
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="area" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>1 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea"> الصفات المرغوبة في الشريك   
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder=" الصفات المرغوبة في الشريك "></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- man-family-section -->
+                    <div class="info d-none man-family">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="information-heading">
+                                    <h1>
+                                        <span>3</span>
+                                        معلومات عن عائلتك
+                                    </h1>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working">  ماهي طبيعة عائلتكِ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="education inputs-style">
+                                    <label for="education">هل طبيعة عائلتك فيه اختلاط ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="education" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage1 inputs-style">
+                                    <label for="marriage1"> هل يمزح أهلك مزاح ثقيل مزعج ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage1" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage">هل ستقبلين لأهلك بالتدخل بخصوصيات منزلك ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="personal inputs-style">
+                                    <label for="personal"> هل يتلفظ أهلك بالكلام البذيء بالعادة ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="personal" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="familylife inputs-style">
+                                    <label for="familylife">  في حال حصلت مشكلة بين أهلك وزوجك وتم الاعتداء عليه لفظيا، مع من ستقفين ؟  
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="familylife" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-12">
+                                <div class="info-textarea inputs-style">
+                                    <label for="info-textarea">  هل يوجد سجل مرضي في عائلتكِ؟ اذكريه إن وجد
+                                        <span class="required">*</span>
+                                    </label>
+                                    <textarea name="info-textarea" placeholder="هل يوجد سجل مرضي في عائلتك.. "></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- family-wife-section -->
+                    <div class="info d-none family-wife">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="information-heading">
+                                    <h1>
+                                        <span>4</span>
+                                        معلومات عن عائلة زوجك
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working">هل تقبلين الزواج من رجل صالح ولكن أهله فاسدين؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working">هل تقبلين المزاح من أهل زوجك ؟   
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="working inputs-style">
+                                    <label for="working">هل تقبلين أن يتدخل أهل زوجك بتسمية أبنائكم وتربيتهم ؟   
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="working" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="education inputs-style">
+                                    <label for="education"> هل لديكِ خطة في تربية الأبناء ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="education" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage1 inputs-style">
+                                    <label for="marriage1"> ماذا تنوي أن تفعلي بأول ٥ سنوات من عمر أطفالك ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage1" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="marriage inputs-style">
+                                    <label for="marriage"> هل تحبين التعامل مع الأطفال ؟
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="marriage" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="personal inputs-style">
+                                    <label for="personal">  من سيكون المسؤول عن تربية الأطفال ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="personal" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="familylife inputs-style">
+                                    <label for="familylife"> هل ستسمحين لأبنائك بالنوم عند أهل زوجك أو أهلك ؟  
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="familylife" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="islamic inputs-style">
+                                    <label for="islamic">  ما طبيعة الملابس التى ستلبسها بناتك الصغار ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="islamic" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="islamic inputs-style">
+                                    <label for="islamic">   كيف ستتعاملين مع أبنائك ؟ 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="islamic" class="form-control js-example-basic-multiple-limit">
+                                        <option> </option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-sm-12 col-12">
+                                <div class="comment inputs-style">
+                                    <label for="comment"> في حالة اختيار “غير ذلك”.. برجاء التوضيح
+                                    </label>
+                                    <input type="text" name="comment" placeholder="    برجاء التوضيح ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                 <a href="javascript:;" class="previous" id="prevBtn" onclick=" prevStep()">السابق</a>
+                 <a href="javascript:;" class="next .add-btn" id="nextBtn" onclick="nextStep()">التالى</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-2 col-8 logo-section">
+                    <div class="">
+                        <img width="96" src="assets/images/footer_logo.png">
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="row w-100">
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">الرئيسية</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">إضافة استمارة</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">من نحن</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">عن المبادرة</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">اتصل بنا</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="#" class="footer-link">تبرع للمبادرة</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-4 d-flex social-section align-items-center">
+                    <div class="social-icons w-100">
+                        <i class="fa-brands fa-facebook-f "></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                </div>
+                <div class="col-12 line">
+                    <hr class=footer-line>
+                </div>
+            </div>
+            <div class="row bottom-menu">
+                <div class="col-lg-4 col-12 text-end">
+                    <span>برمجة وتصميم codawy</span>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="bottom-menu-links d-flex justify-content-around">
+                        <a href="#">الشروط و الاحكام</a>
+                        <a href="#">سياسة الخصوصية</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 text-start">
+                    <span>2024 جميع الحقوق محفوظة </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/c4b2e4460e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
