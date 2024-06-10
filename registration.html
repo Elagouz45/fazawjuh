@@ -49,86 +49,78 @@
         </nav>
     </header>
 
-    <section>
-        <div class="contact-us">
-            <div class="container-lg">
-                <div class="card-content mb-5">
-                    <h1>
-                        تواصل معنا
-                    </h1>
-                    <p> أي أسئلة أو تعليقات؟ فقط اكتب لنا رسالة!</p>
+    <section class="registration">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 offset-2">
+                    <div>
+                        <h1>
+                            انشئ حسابك الآن!
+                        </h1>
+                    </div>
+                    <div class="gender">
+                        <label for="" required>النوع</label>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <input type="radio" name="gender" class="mx-2">
+                                <label for="">ذكر</label>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <input type="radio" name="gender" class="mx-2">
+                                <label for="">انثى</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-info mt-3">
+                        <div class="mb-4">
+                            <label class="mb-3">
+                                الاسم بالكامل
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" class="form-control rounded-5" placeholder="الاسم">
+                        </div>
+                        <div class="mb-4">
+                            <label class="mb-3">
+                                البريد الإلكتروني
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" class="form-control rounded-5" placeholder="البريد الإلكتروني ">
+                        </div>
+                        <div class="mb-4">
+                            <label class="mb-3">
+                                رقم الموبايل
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" class="form-control rounded-5" placeholder="رقم الموبايل">
+                        </div>
+                        <div class="mb-4">
+                            <label class="mb-3">
+                                كلمة المرور
+                                <span class="required">*</span>
+                            </label>
+                            <div class="input-group">
+                                <input type="password" class="form-control rounded-5 password-input"
+                                    placeholder="كلمة المرور ">
+                                <img src="./assets/images/hide/light.svg" alt="Show/Hide Password"
+                                    class="password-toggle">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <button class="btn add-btn w-100">
+                                <a class="text-decoration-none text-white"> إنشاء حساب</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="row m-5">
-                        <div class="col-md-4 offset-2 mb-3 col-sm-12 col-12">
-                            <div class="information-card">
-                                <div class="info-heading">
-                                    <h1>معلومات الاتصال</h1>
-                                    <span>اترك رسالتك او تواصل معنا </span>
-                                </div>
-                                <div class="contact-data">
-                                    <div>
-                                        <img src="./assets/images/light.png" alt="">
-                                        <span>+213 457 908</span>
-                                    </div>
-                                    <div>
-                                        <img src="./assets/images/mail/light.png" alt="">
-                                        <span>asdf@gmail.com</span>
-                                    </div>
-                                </div>
-                                <div class="contact-icon">
-                                    <img src="./assets/images/facebook/light.png" alt="">
-                                    <img src="./assets/images/twitter/Vector.png" alt="">
-                                    <img src="./assets/images/icons8-whatsapp 1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3 col-sm-12 col-12">
-                            <div class="input-info">
-                                <div class="mb-4">
-                                    <label class="mb-3">
-                                        الاسم بالكامل
-                                    </label>
-                                    <input type="text" class="form-control rounded-5" placeholder="الاسم">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="mb-3">
-                                        البريد الإلكتروني 
-                                    </label>
-                                    <input type="text" class="form-control rounded-5" placeholder="البريد الإلكتروني ">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="mb-3">
-                                        رقم الموبايل 
-                                        <span class="required">*</span>
-                                    </label>
-                                   <input type="text" class="form-control rounded-5" placeholder="رقم الموبايل">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="mb-3">
-                                        عنوان الرسالة
-                                    </label>
-                                    <input type="text" class="form-control rounded-5" placeholder="عنوان الرسالة">
-                                </div>
-                                <div class="mb-4">
-                                    <label class="mb-3">
-                                        رسالتك
-                                    </label>
-                                    <input type="text" >
-                                    <textarea class="form-control rounded-5" placeholder="رسالتك "></textarea>
-                                </div>
-                                <div>
-                                    <button class="btn add-btn w-100">
-                                        <a class="text-decoration-none text-white"> إرسال</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                    <div class="mt-100px mx-5">
+                        <img src="./assets/images/Frazawjoh illustration 1.svg" alt="zawjoh">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container-lg">
@@ -188,7 +180,6 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
