@@ -6,845 +6,772 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="banner">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-lg">
-                <a class="navbar-brand" href="#">
-                    <img height="61" width="96" src="assets/images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<header class="banner">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                <img height="61" width="96" src="assets/images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"> الرئيسية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">إضافة استمارة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">من نحن</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">عن المبادرة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">اتصل بنا</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">تبرع للمبادرة</a>
-                        </li>
-                    </ul>
-                    <button class="btn add-btn d-lg-block d-none">إضافة حساب</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <div class="sidebar">
-            <div class="container-lg">
-                <div class="d-flex align-items-start">
-                    <div class="tab-content" id="v-pills-tabContent">
-                    </div>
-                </div>
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="information-bar col">
-                                <div class="sidebar nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true">
-                                    <img src="./assets/images/my-information-svgrepo-com 1.png"
-                                        alt="المعلومات الأساسية">
-                                    <p>المعلومات الأساسية</p>
-                                </div>
-                            </div>
-                            <div class="woman-question-bar col">
-                                <div class="nav-link sidebar" id="v-pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-profile" type="button" role="tab"
-                                    aria-controls="v-pills-profile" aria-selected="false">
-                                    <img src="./assets/images/Vector.png" alt="أسئلة متعلقه بالزوجة ">
-                                    <p>عن الزوج </p>
-                                </div>
-                            </div>
-
-                            <div class="family-bar col">
-                                <div class="nav-link sidebar" id="v-pills-messages-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-messages" type="button" role="tab"
-                                    aria-controls="v-pills-messages" aria-selected="false">
-                                    <img src="./assets/images/family-silhouette-svgrepo-com 1.png"
-                                        alt="معلومات عن عائلتك ">
-                                    <p> عن عائلتك </p>
-                                </div>
-                            </div>
-                            <div class="wife-family-bar col">
-                                <div class="nav-link sidebar" id="v-pills-settings-tab" data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-settings" type="button" role="tab"
-                                    aria-controls="v-pills-settings" aria-selected="false">
-                                    <img src="./assets/images/group-svgrepo-com 1.png" alt="معلومات عن عائلة زوجتك ">
-                                    <p>عن عائلة الزوج </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                                    aria-labelledby="v-pills-home-tab">
-                                    <div class="wife-form-section ">
-                                        <div class="item-card d-flex py-5 px-5">
-                                            <a href="#" class="header-image">
-                                                <div class="overlay position-relative">
-                                                    <img src="assets/images/user.svg">
-                                                </div>
-
-                                            </a>
-                                            <div class="card-content mx-5 ">
-                                                <h4 class="card-man-name">
-                                                    <img width="25" src="assets/images/img_4.png">
-                                                    شيماء أحمد
-                                                </h4>
-                                                <div class="statics d-flex mt-4">
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img.png">
-                                                        <span>33 سنة</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_1.png">
-                                                        <span>أرمل</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_2.png">
-                                                        <span>184 سم</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_3.png">
-                                                        <span>القاهرة</span>
-                                                    </div>
-                                                </div>
-                                                <button class="btn add-btn mt-4">
-                                                    <a href="" class="text-white text-decoration-none">إرسال رسالة</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-details">
-                                                <h1>تفاصيلك</h1>
-                                                <div class="row">
-                                                    <div class="col-md-6 col-sm-12 col-12">
-                                                        <p>روتين عناية شخصية :
-                                                            <span>لدي بشكل يومي </span>
-                                                        </p>
-                                                        <p>
-                                                            المشاكل القضائية :
-                                                            <span> لدي ولكن بالظلم</span>
-                                                        </p>
-                                                        <p>
-                                                            متابعة الرجال علي وسائل التواصل :
-                                                            <span>لا أتابع الرجال</span>
-                                                        </p>
-                                                        <p>
-                                                            تقبلين التعدد :
-                                                            <span>لا أطيقه</span>
-                                                        </p>
-                                                        <p>
-                                                            مدي تقبلك لقيام زوجك بالتعدد :
-                                                            <span>سأطلب الطلاق</span>
-                                                        </p>
-                                                        <p>
-                                                            تاريخ الميلاد :
-                                                            <span> 1990/4/13</span>
-                                                        </p>
-                                                        <p>
-                                                            الوزن :
-                                                            <span>77كجم</span>
-                                                        </p>
-                                                        <p>
-                                                            لون البشرة :
-                                                            <span>أبيض</span>
-                                                        </p>
-                                                        <p>
-                                                            صف نفسك :
-                                                            <span>
-                                                                عصبية
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            العمل :
-                                                            <span>
-                                                                عاملة
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            ترك العمل بعد الزواج :
-                                                            <span>لا أقبل</span>
-                                                        </p>
-                                                        <p>
-                                                            التسامح :
-                                                            <span>
-                                                                حسب الشخص والخطأ
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            تمانعين تربية القطط :
-                                                            <span>نعم فأنا أخاف منهم</span>
-                                                        </p>
-                                                        <p>
-                                                            تناول مشروبات الطاقة :
-                                                            <span>أحيانا</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="col-md-6 col-sm-12 col-12">
-                                                        <p>
-                                                            طاعتك لوالدك :
-                                                            <span>عالية في كل شئ</span>
-                                                        </p>
-                                                        <p>
-                                                            لون العيون :
-                                                            <span>أزرق</span>
-                                                        </p>
-
-                                                        <p>
-                                                            طبيعة اللباس :
-                                                            <span>
-                                                                نقاب ملونا
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            المستوي الدراسي :
-                                                            <span>
-                                                                بكالوريوس
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            الاهتمام بالنضافة :
-                                                            <span>
-                                                                متوسط
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            الجنسية:
-                                                            <span>
-                                                                المصرية
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            الدولة :
-                                                            <span>
-                                                                مصر
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            المدينة :
-                                                            <span>
-                                                                القاهرة
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            المنطقة :
-                                                            <span>أكتوبر</span>
-                                                        </p>
-                                                        <p>
-                                                            نوع الطلاق :
-                                                            <span>
-                                                                طلاق رجعي
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            عدد الزيجات السابقة :
-                                                            <span>ثلاثه</span>
-                                                        </p>
-                                                        <p>
-                                                            الأجواء العائلية :
-                                                            <span>
-                                                                نعم أحبها
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            لديكِ أي أنشطة دعوية :
-                                                            <span>نعم لدي</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-details">
-                                                <h1> ما ذا يقول الناس عني </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> الحالة الصحية العامة والجسدية </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> أسباب الطلاق </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> مستوي التعليم </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="card-details">
-                                                <h1> المشاكل القضائية </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> كيف تعبرين عن غضبك </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> الدعاة والشيوخ الذين تتابعين علي وسائل التواصل </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> الهدف من الزواج </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> الأمراض المزمنة </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> شروطي الخاصة بالزواج </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1> رأي بمقولة المرأة ليست مجبرة علي خدمة زوجها </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="card-details">
-                                                <h1>اللغات التي أتحدث بها </h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                    aria-labelledby="v-pills-profile-tab">
-                                    <div class="wife-form-section husband-details">
-                                        <div class="item-card d-flex py-5 px-5">
-                                            <a href="#" class="header-image">
-                                                <div class="overlay position-relative">
-                                                    <img src="assets/images/user.svg">
-                                                </div>
-
-                                            </a>
-                                            <div class="card-content mx-5 ">
-                                                <h4 class="card-man-name">
-                                                    <img width="25" src="assets/images/img_4.png">
-                                                    شيماء أحمد
-                                                </h4>
-                                                <div class="statics d-flex mt-4">
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img.png">
-                                                        <span>33 سنة</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_1.png">
-                                                        <span>أرملة</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_2.png">
-                                                        <span>184 سم</span>
-                                                    </div>
-                                                    <div class="statics-content mx-3">
-                                                        <img width="16" height="16" src="assets/images/img_3.png">
-                                                        <span>القاهرة</span>
-                                                    </div>
-                                                </div>
-                                                <button class="btn add-btn mt-4">
-                                                    <a href="" class="text-white text-decoration-none"> بيانات
-                                                        التواصل</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-details">
-                                                <h1>مواصفات الزوج</h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p>السن من :
-                                                            <span> 25 : 30 </span>
-                                                        </p>
-                                                        <p>الحالات التي أقبل به :
-                                                            <span> أعزب - مطلق بدون أطفال - أرمل بدون أطفال </span>
-                                                        </p>
-                                                        <p>
-                                                            مستوي التعليم :
-                                                            <span>بكالوريوس</span>
-                                                        </p>
-                                                        <p>
-                                                            تشترطين السكن في محافظة معبنة بعد الزواج :
-                                                            <span>نعم</span>
-                                                        </p>
-                                                        <p>
-                                                            تقبلين التدخل في لبسك خارج البيت :
-                                                            <span> نعم من حقه</span>
-                                                        </p>
-                                                        <p>
-                                                            تقبلين اختلاطه بالنساء في عمله :
-                                                            <span>نعم ، بشرط عدم التواصل خارج العمل</span>
-                                                        </p>
-                                                        <p>
-                                                            توافقين علي عمله بالدعوة :
-                                                            <span>نعم بشرط عدم الضرر بنا</span>
-                                                        </p>
-                                                        <p>
-                                                            تقبلين بالجنسيات الأخري غير الأردنية :
-                                                            <span> علي حسب الجنسية</span>
-                                                        </p>
-                                                        <p>
-                                                             تقبلين بمنعكِ من المبيت خارج المنزل :
-                                                            <span> نعم من حقه</span>
-                                                        </p>
-                                                        <p>
-                                                             تقبلين بمنعكِ من الخروج وحدكِ من المنزل :
-                                                            <span> نعم من حقه</span>
-                                                        </p>
-                                                        <p>
-                                                            فتاة والديها منفصلان :
-                                                            <span>
-                                                                لا أقبل
-                                                            </span>
-                                                        </p>
-                                                        <p>
-                                                            تقبلين بالسكن مع أهل زوجك :
-                                                            <span>نعم ، مؤقتا فقط</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-details">
-                                                <h1> الصفات المرغوبة في الشريك</h1>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <p class="text">
-                                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
-                                                            توليد هذا النص
-                                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                            العديد من النصوص
-                                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        </p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                        aria-labelledby="v-pills-messages-tab">
-                                        <div class="wife-form-section family-details">
-                                            <div class="item-card d-flex py-5 px-5">
-                                                <a href="#" class="header-image">
-                                                    <div class="overlay position-relative">
-                                                        <img src="assets/images/user.svg">
-                                                    </div>
-
-                                                </a>
-                                                <div class="card-content mx-5 ">
-                                                    <h4 class="card-man-name">
-                                                        <img width="25" src="assets/images/img_4.png">
-                                                        شيماء أحمد
-                                                    </h4>
-                                                    <div class="statics d-flex mt-4">
-                                                        <div class="statics-content mx-3">
-                                                            <img width="16" height="16" src="assets/images/img.png">
-                                                            <span>33 سنة</span>
-                                                        </div>
-                                                        <div class="statics-content mx-3">
-                                                            <img width="16" height="16" src="assets/images/img_1.png">
-                                                            <span>أرمل</span>
-                                                        </div>
-                                                        <div class="statics-content mx-3">
-                                                            <img width="16" height="16" src="assets/images/img_2.png">
-                                                            <span>184 سم</span>
-                                                        </div>
-                                                        <div class="statics-content mx-3">
-                                                            <img width="16" height="16" src="assets/images/img_3.png">
-                                                            <span>القاهرة</span>
-                                                        </div>
-                                                    </div>
-                                                    <button class="btn add-btn mt-4">
-                                                        <a href="" class="text-white text-decoration-none"> بيانات
-                                                            التواصل</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-details">
-                                                    <h1>عن عائلتك </h1>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-12">
-                                                            <p>طبيعة العائلة :
-                                                                <span> كلهم متدينين </span>
-                                                            </p>
-                                                            <p>الاختلاط في عائلتي :
-                                                                <span>يوجد ولكن لن أجعل زوجتي تخالط</span>
-                                                            </p>
-                                                            <p>تدخل الأهل بخصوصيات المنزل :
-                                                                <span> يوجد ولكن لن أجعل زوجتي تخالط</span>
-                                                            </p>
-                                                            <p>
-                                                                الكلام البذئ بالعائلة :
-                                                                <span> لن أقبل اطلاقا</span>
-                                                            </p>
-                                                            <p>
-                                                                المزاح الثقيل المزعج :
-                                                                <span>أحيانا يمزح أهلي بذلك</span>
-                                                            </p>
-                                                            <p>
-                                                                في حال يوجد مشكلة بين أهلك وزوجتك :
-                                                                <span> سأقف مع أهلي حتي لو الحق عليهم</span>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-details">
-                                                    <h1> السجل المرضي في العائلة </h1>
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-12">
-                                                            <p class="text">
-                                                                ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
-                                                                تم توليد هذا النص
-                                                                من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
-                                                                العديد من النصوص
-                                                                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                            </p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                            aria-labelledby="v-pills-settings-tab">
-                                            <div class="wife-form-section family-husband-details">
-                                                <div class="item-card d-flex py-5 px-5">
-                                                    <a href="#" class="header-image">
-                                                        <div class="overlay position-relative">
-                                                            <img src="assets/images/user.svg">
-                                                        </div>
-
-                                                    </a>
-                                                    <div class="card-content mx-5 ">
-                                                        <h4 class="card-man-name">
-                                                            <img width="25" src="assets/images/img_4.png">
-                                                            شيماء أحمد
-                                                        </h4>
-                                                        <div class="statics d-flex mt-4">
-                                                            <div class="statics-content mx-3">
-                                                                <img width="16" height="16" src="assets/images/img.png">
-                                                                <span>33 سنة</span>
-                                                            </div>
-                                                            <div class="statics-content mx-3">
-                                                                <img width="16" height="16"
-                                                                    src="assets/images/img_1.png">
-                                                                <span>أرمله</span>
-                                                            </div>
-                                                            <div class="statics-content mx-3">
-                                                                <img width="16" height="16"
-                                                                    src="assets/images/img_2.png">
-                                                                <span>184 سم</span>
-                                                            </div>
-                                                            <div class="statics-content mx-3">
-                                                                <img width="16" height="16"
-                                                                    src="assets/images/img_3.png">
-                                                                <span>القاهرة</span>
-                                                            </div>
-                                                        </div>
-                                                        <button class="btn add-btn mt-4">
-                                                            <a href="" class="text-white text-decoration-none"> بيانات
-                                                                التواصل</a>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-details">
-                                                        <h1> عن عائلة الزوج </h1>
-                                                        <div class="row">
-                                                            <div class="col-md-12 col-12">
-                                                                <p>
-                                                                    تقبلين الزواج من رجل صالح ولكن أهله فاسدين : تقبلين
-                                                                    الزواج من رجل صالح
-                                                                    ولكن أهله فاسدين :
-                                                                    <span>لا أقبل أبدا</span>
-                                                                </p>
-                                                                <p>
-                                                                    تقبلين المزاح من أهل زوجك :تقبلين المزاح من أهل زوجك
-                                                                    :
-                                                                    <span> من النساء فقط</span>
-                                                                </p>
-                                                                <p>
-                                                                    تقبلين تدخل أهل زوجك بتسمية الأبناء وتربيتهم :
-                                                                    <span>أقبل</span>
-                                                                </p>
-                                                                <p>
-                                                                    خطة تربية الأبناء :
-                                                                    <span> سأترك الأمر لزوجي</span>
-                                                                </p>
-                                                                <p>
-                                                                    ماذا ستفعلين في أول 5 سنوات من عمر الطفل :
-                                                                    <span>اللعب مع التعليم</span>
-                                                                </p>
-                                                                <p>
-                                                                    التعامل مع الأطفال :
-                                                                    <span> أحب التعامل معهم</span>
-                                                                </p>
-                                                                <p>
-                                                                    المسؤل عن تربية الأطفال :
-                                                                    <span>أنا وزوجي </span>
-                                                                </p>
-                                                                <p>
-                                                                    السماح للأبناء بالنوم عند أهلك او أهل زوجك :
-                                                                    <span>علي حسب صلاحهم</span>
-                                                                </p>
-                                                                <p>
-                                                                    طبيعة لباس البنات الصغار :
-                                                                    <span>حسب الموضة</span>
-                                                                </p>
-                                                                <p>
-                                                                     تقبلين بمنعكِ من الخروج وحدكِ من المنزل :
-                                                                    <span>نعم من حقه</span>
-                                                                </p>
-                                                                <p>
-                                                                    فتاة والديها منفصلان :
-                                                                    <span> لا أقبل</span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"> الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">إضافة استمارة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عن المبادرة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تبرع للمبادرة</a>
+                    </li>
+                </ul>
+                <button class="btn add-btn d-lg-block d-none">إضافة حساب</button>
             </div>
         </div>
-    </section>
+    </nav>
+</header>
 
-
-
-
-    <footer>
+<section>
+    <div class="sidebar">
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg-2 col-8 logo-section">
-                    <div class="">
-                        <img width="96" src="assets/images/footer_logo.png">
+                <div class="col-md-4 tab-buttons">
+                    <div data-tab="tab1" class="information-bar col tab-button">
+                        <div class="sidebar  ">
+                            <img src="./assets/images/my-information-svgrepo-com 1.png" alt="المعلومات الأساسية">
+                            <p>المعلومات الأساسية</p>
+                        </div>
+                    </div>
+                    <div data-tab="tab2" class="woman-question-bar col tab-button">
+                        <div class="sidebar ">
+                            <img src="./assets/images/Vector.png" alt="أسئلة متعلقه بالزوجة ">
+                            <p>عن الزوج </p>
+                        </div>
+                    </div>
+                    <div data-tab="tab3" class="family-bar col tab-button">
+                        <div class="sidebar ">
+                            <img src="./assets/images/family-silhouette-svgrepo-com 1.png" alt="معلومات عن عائلتك ">
+                            <p> عن عائلتك </p>
+                        </div>
+                    </div>
+                    <div data-tab="tab4" class="wife-family-bar col tab-button">
+                        <div class="sidebar ">
+                            <img src="./assets/images/group-svgrepo-com 1.png" alt="معلومات عن عائلة زوجتك ">
+                            <p>عن عائلة الزوج </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8 d-flex align-items-center">
-                    <div class="row w-100">
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">الرئيسية</a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">إضافة استمارة</a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">من نحن</a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">عن المبادرة</a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">اتصل بنا</a>
-                        </div>
-                        <div class="col-lg-2">
-                            <a href="#" class="footer-link">تبرع للمبادرة</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-4 d-flex social-section align-items-center">
-                    <div class="social-icons w-100">
-                        <i class="fa-brands fa-facebook-f "></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
+                <div class="col-md-8">
+                    <div  id="tab1" class="wife-form-section tab-content" >
+                        <div class="item-card d-flex py-5 px-5">
+                            <a href="#" class="header-image">
+                                <div class="overlay position-relative">
+                                    <img src="assets/images/user.svg">
+                                </div>
 
-                </div>
-                <div class="col-12 line">
-                    <hr class=footer-line>
-                </div>
-            </div>
-            <div class="row bottom-menu">
-                <div class="col-lg-4 col-12 text-end">
-                    <span>برمجة وتصميم codawy</span>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="bottom-menu-links d-flex justify-content-around">
-                        <a href="#">الشروط و الاحكام</a>
-                        <a href="#">سياسة الخصوصية</a>
+                            </a>
+                            <div class="card-content mx-5 ">
+                                <h4 class="card-man-name">
+                                    <img width="25" src="assets/images/img_4.png">
+                                    شيماء أحمد
+                                </h4>
+                                <div class="statics d-flex mt-4">
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img.png">
+                                        <span>33 سنة</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_1.png">
+                                        <span>أرمل</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_2.png">
+                                        <span>184 سم</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_3.png">
+                                        <span>القاهرة</span>
+                                    </div>
+                                </div>
+                                <button class="btn add-btn mt-4">
+                                    <a href="" class="text-white text-decoration-none">إرسال رسالة</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1>تفاصيلك</h1>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <p>روتين عناية شخصية :
+                                            <span>لدي بشكل يومي </span>
+                                        </p>
+                                        <p>
+                                            المشاكل القضائية :
+                                            <span> لدي ولكن بالظلم</span>
+                                        </p>
+                                        <p>
+                                            متابعة الرجال علي وسائل التواصل :
+                                            <span>لا أتابع الرجال</span>
+                                        </p>
+                                        <p>
+                                            تقبلين التعدد :
+                                            <span>لا أطيقه</span>
+                                        </p>
+                                        <p>
+                                            مدي تقبلك لقيام زوجك بالتعدد :
+                                            <span>سأطلب الطلاق</span>
+                                        </p>
+                                        <p>
+                                            تاريخ الميلاد :
+                                            <span> 1990/4/13</span>
+                                        </p>
+                                        <p>
+                                            الوزن :
+                                            <span>77كجم</span>
+                                        </p>
+                                        <p>
+                                            لون البشرة :
+                                            <span>أبيض</span>
+                                        </p>
+                                        <p>
+                                            صف نفسك :
+                                            <span>
+                                                    عصبية
+                                                </span>
+                                        </p>
+                                        <p>
+                                            العمل :
+                                            <span>
+                                                    عاملة
+                                                </span>
+                                        </p>
+                                        <p>
+                                            ترك العمل بعد الزواج :
+                                            <span>لا أقبل</span>
+                                        </p>
+                                        <p>
+                                            التسامح :
+                                            <span>
+                                                    حسب الشخص والخطأ
+                                                </span>
+                                        </p>
+                                        <p>
+                                            تمانعين تربية القطط :
+                                            <span>نعم فأنا أخاف منهم</span>
+                                        </p>
+                                        <p>
+                                            تناول مشروبات الطاقة :
+                                            <span>أحيانا</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <p>
+                                            طاعتك لوالدك :
+                                            <span>عالية في كل شئ</span>
+                                        </p>
+                                        <p>
+                                            لون العيون :
+                                            <span>أزرق</span>
+                                        </p>
+
+                                        <p>
+                                            طبيعة اللباس :
+                                            <span>
+                                                    نقاب ملونا
+                                                </span>
+                                        </p>
+                                        <p>
+                                            المستوي الدراسي :
+                                            <span>
+                                                    بكالوريوس
+                                                </span>
+                                        </p>
+                                        <p>
+                                            الاهتمام بالنضافة :
+                                            <span>
+                                                    متوسط
+                                                </span>
+                                        </p>
+                                        <p>
+                                            الجنسية:
+                                            <span>
+                                                    المصرية
+                                                </span>
+                                        </p>
+                                        <p>
+                                            الدولة :
+                                            <span>
+                                                    مصر
+                                                </span>
+                                        </p>
+                                        <p>
+                                            المدينة :
+                                            <span>
+                                                    القاهرة
+                                                </span>
+                                        </p>
+                                        <p>
+                                            المنطقة :
+                                            <span>أكتوبر</span>
+                                        </p>
+                                        <p>
+                                            نوع الطلاق :
+                                            <span>
+                                                    طلاق رجعي
+                                                </span>
+                                        </p>
+                                        <p>
+                                            عدد الزيجات السابقة :
+                                            <span>ثلاثه</span>
+                                        </p>
+                                        <p>
+                                            الأجواء العائلية :
+                                            <span>
+                                                    نعم أحبها
+                                                </span>
+                                        </p>
+                                        <p>
+                                            لديكِ أي أنشطة دعوية :
+                                            <span>نعم لدي</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1> ما ذا يقول الناس عني </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> الحالة الصحية العامة والجسدية </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> أسباب الطلاق </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> مستوي التعليم </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-details">
+                                <h1> المشاكل القضائية </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> كيف تعبرين عن غضبك </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> الدعاة والشيوخ الذين تتابعين علي وسائل التواصل </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> الهدف من الزواج </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> الأمراض المزمنة </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> شروطي الخاصة بالزواج </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1> رأي بمقولة المرأة ليست مجبرة علي خدمة زوجها </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <h1>اللغات التي أتحدث بها </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-12 text-start">
-                    <span>2024 جميع الحقوق محفوظة </span>
+                    <div  id="tab2" class="wife-form-section husband-details tab-content">
+                        <div class="item-card d-flex py-5 px-5">
+                            <a href="#" class="header-image">
+                                <div class="overlay position-relative">
+                                    <img src="assets/images/user.svg">
+                                </div>
+
+                            </a>
+                            <div class="card-content mx-5 ">
+                                <h4 class="card-man-name">
+                                    <img width="25" src="assets/images/img_4.png">
+                                    شيماء أحمد
+                                </h4>
+                                <div class="statics d-flex mt-4">
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img.png">
+                                        <span>33 سنة</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_1.png">
+                                        <span>أرملة</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_2.png">
+                                        <span>184 سم</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_3.png">
+                                        <span>القاهرة</span>
+                                    </div>
+                                </div>
+                                <button class="btn add-btn mt-4">
+                                    <a href="" class="text-white text-decoration-none"> بيانات التواصل</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1>مواصفات الزوج</h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p>السن من :
+                                            <span> 25 : 30 </span>
+                                        </p>
+                                        <p>الحالات التي أقبل به :
+                                            <span> أعزب - مطلق بدون أطفال - أرمل بدون أطفال </span>
+                                        </p>
+                                        <p>
+                                            مستوي التعليم :
+                                            <span>بكالوريوس</span>
+                                        </p>
+                                        <p>
+                                            تشترطين السكن في محافظة معبنة بعد الزواج :
+                                            <span>نعم</span>
+                                        </p>
+                                        <p>
+                                            تقبلين التدخل في لبسك خارج البيت :
+                                            <span> نعم من حقه</span>
+                                        </p>
+                                        <p>
+                                            تقبلين اختلاطه بالنساء في عمله :
+                                            <span>نعم ، بشرط عدم التواصل خارج العمل</span>
+                                        </p>
+                                        <p>
+                                            توافقين علي عمله بالدعوة :
+                                            <span>نعم بشرط عدم الضرر بنا</span>
+                                        </p>
+                                        <p>
+                                            تقبلين بالجنسيات الأخري غير الأردنية :
+                                            <span> علي حسب الجنسية</span>
+                                        </p>
+                                        <p>
+                                             تقبلين بمنعكِ من المبيت خارج المنزل :
+                                            <span> نعم من حقه</span>
+                                        </p>
+                                        <p>
+                                             تقبلين بمنعكِ من الخروج وحدكِ من المنزل :
+                                            <span> نعم من حقه</span>
+                                        </p>
+                                        <p>
+                                            فتاة والديها منفصلان :
+                                            <span>
+                                                    لا أقبل
+                                                </span>
+                                        </p>
+                                        <p>
+                                            تقبلين بالسكن مع أهل زوجك :
+                                            <span>نعم ، مؤقتا فقط</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1> الصفات المرغوبة في الشريك</h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="tab3" class="wife-form-section family-details tab-content">
+                        <div class="item-card d-flex py-5 px-5">
+                            <a href="#" class="header-image">
+                                <div class="overlay position-relative">
+                                    <img src="assets/images/user.svg">
+                                </div>
+
+                            </a>
+                            <div class="card-content mx-5 ">
+                                <h4 class="card-man-name">
+                                    <img width="25" src="assets/images/img_4.png">
+                                    شيماء أحمد
+                                </h4>
+                                <div class="statics d-flex mt-4">
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img.png">
+                                        <span>33 سنة</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_1.png">
+                                        <span>أرمل</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_2.png">
+                                        <span>184 سم</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_3.png">
+                                        <span>القاهرة</span>
+                                    </div>
+                                </div>
+                                <button class="btn add-btn mt-4">
+                                    <a href="" class="text-white text-decoration-none"> بيانات التواصل</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1>عن عائلتك </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p>طبيعة العائلة :
+                                            <span> كلهم متدينين </span>
+                                        </p>
+                                        <p>الاختلاط في عائلتي :
+                                            <span>يوجد ولكن لن أجعل زوجتي تخالط</span>
+                                        </p>
+                                        <p>تدخل الأهل بخصوصيات المنزل :
+                                            <span> يوجد ولكن لن أجعل زوجتي تخالط</span>
+                                        </p>
+                                        <p>
+                                            الكلام البذئ بالعائلة :
+                                            <span> لن أقبل اطلاقا</span>
+                                        </p>
+                                        <p>
+                                            المزاح الثقيل المزعج :
+                                            <span>أحيانا يمزح أهلي بذلك</span>
+                                        </p>
+                                        <p>
+                                            في حال يوجد مشكلة بين أهلك وزوجتك :
+                                            <span> سأقف مع أهلي حتي لو الحق عليهم</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1> السجل المرضي في العائلة </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p class="text">
+                                            ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                            من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                            الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  id="tab4" class="wife-form-section family-husband-details tab-content">
+                        <div class="item-card d-flex py-5 px-5">
+                            <a href="#" class="header-image">
+                                <div class="overlay position-relative">
+                                    <img src="assets/images/user.svg">
+                                </div>
+
+                            </a>
+                            <div class="card-content mx-5 ">
+                                <h4 class="card-man-name">
+                                    <img width="25" src="assets/images/img_4.png">
+                                    شيماء أحمد
+                                </h4>
+                                <div class="statics d-flex mt-4">
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img.png">
+                                        <span>33 سنة</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_1.png">
+                                        <span>أرمله</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_2.png">
+                                        <span>184 سم</span>
+                                    </div>
+                                    <div class="statics-content mx-3">
+                                        <img width="16" height="16" src="assets/images/img_3.png">
+                                        <span>القاهرة</span>
+                                    </div>
+                                </div>
+                                <button class="btn add-btn mt-4">
+                                    <a href="" class="text-white text-decoration-none"> بيانات التواصل</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-details">
+                                <h1> عن عائلة الزوج </h1>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <p>
+                                            تقبلين الزواج من رجل صالح ولكن أهله فاسدين : تقبلين الزواج من رجل صالح
+                                            ولكن أهله فاسدين :
+                                            <span>لا أقبل أبدا</span>
+                                        </p>
+                                        <p>
+                                            تقبلين المزاح من أهل زوجك :تقبلين المزاح من أهل زوجك :
+                                            <span> من النساء فقط</span>
+                                        </p>
+                                        <p>
+                                            تقبلين تدخل أهل زوجك بتسمية الأبناء وتربيتهم :
+                                            <span>أقبل</span>
+                                        </p>
+                                        <p>
+                                            خطة تربية الأبناء :
+                                            <span> سأترك الأمر لزوجي</span>
+                                        </p>
+                                        <p>
+                                            ماذا ستفعلين في أول 5 سنوات من عمر الطفل :
+                                            <span>اللعب مع التعليم</span>
+                                        </p>
+                                        <p>
+                                            التعامل مع الأطفال :
+                                            <span> أحب التعامل معهم</span>
+                                        </p>
+                                        <p>
+                                            المسؤل عن تربية الأطفال :
+                                            <span>أنا وزوجي </span>
+                                        </p>
+                                        <p>
+                                            السماح للأبناء بالنوم عند أهلك او أهل زوجك :
+                                            <span>علي حسب صلاحهم</span>
+                                        </p>
+                                        <p>
+                                            طبيعة لباس البنات الصغار :
+                                            <span>حسب الموضة</span>
+                                        </p>
+                                        <p>
+                                             تقبلين بمنعكِ من الخروج وحدكِ من المنزل :
+                                            <span>نعم من حقه</span>
+                                        </p>
+                                        <p>
+                                            فتاة والديها منفصلان :
+                                            <span> لا أقبل</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+<footer>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-2 col-8 logo-section">
+                <div class="">
+                    <img width="96" src="assets/images/footer_logo.png">
+                </div>
+            </div>
+            <div class="col-lg-8 d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">الرئيسية</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">إضافة استمارة</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">من نحن</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">عن المبادرة</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">اتصل بنا</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="#" class="footer-link">تبرع للمبادرة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-4 d-flex social-section align-items-center">
+                <div class="social-icons w-100">
+                    <i class="fa-brands fa-facebook-f "></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+            </div>
+            <div class="col-12 line">
+                <hr class=footer-line>
+            </div>
+        </div>
+        <div class="row bottom-menu">
+            <div class="col-lg-4 col-12 text-end">
+                <span>برمجة وتصميم codawy</span>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="bottom-menu-links d-flex justify-content-around">
+                    <a href="#">الشروط و الاحكام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 text-start">
+                <span>2024 جميع الحقوق محفوظة </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://kit.fontawesome.com/c4b2e4460e.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+<script src="https://kit.fontawesome.com/c4b2e4460e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 
 </html>

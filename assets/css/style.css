@@ -335,7 +335,22 @@ input[type="radio"] {
     margin: 15px;
 
 }
-
+/*tabs*/
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+.tab-buttons button {
+    margin-right: 5px;
+}
+.active-tab{
+    background-color: rgba(242, 240, 251, 1);
+    border-radius: 32px;
+}
 /* form-progress-bar section*/
 
 .progress.active {
@@ -455,6 +470,8 @@ input {
     display: flex;
     align-items: center;
     margin: 12px 0px;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
 }
 
 .sidebar p {
@@ -462,6 +479,7 @@ input {
     font-size: 20px;
     color: #4C4763;
     margin: 10px 0px;
+    margin-inline-start: 10px;
 }
 
 .sidebar.active {
