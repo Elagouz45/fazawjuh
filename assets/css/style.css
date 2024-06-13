@@ -255,18 +255,22 @@ input[type="radio"] {
 }
 
 /* adding form intro  */
+.adding-form {
+    margin-bottom: 120px;
+}
 
 .adding-form h1 {
     color: #4C4763;
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .adding-form-instructions {
     background-color: #F2F0FB;
-    margin: 30px 0;
-    padding: 30px;
+    padding: 48px 32px;
+    border-radius: 8px;
+    margin-bottom: 24px;
 }
 
 .adding-form-instructions h2 {
@@ -275,6 +279,7 @@ input[type="radio"] {
     color: #4C4763;
     margin-bottom: 40px;
     position: relative;
+    line-height: 38px;
 }
 
 .adding-form-instructions h2::before {
@@ -284,7 +289,7 @@ input[type="radio"] {
     border-radius: 50%;
     background-color: red;
     right: -20px;
-    top: 6px;
+    top: 14px;
     position: absolute;
 }
 
@@ -293,12 +298,14 @@ input[type="radio"] {
     font-size: 16px;
     color: #4C4763;
     margin: 0px;
+    line-height: 30px;
 
 }
 
 .adding-form-instructions ul {
     list-style-type: square;
     color: #4C4763;
+    margin-bottom: 30px;
 }
 
 .adding-form-instructions ul li span {
@@ -311,7 +318,7 @@ input[type="radio"] {
     font-size: 20px;
     font-weight: 700;
     color: #4C4763;
-    margin-top: 40px;
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -331,9 +338,8 @@ input[type="radio"] {
     align-items: center;
     border: 0.4px solid #4C4763;
     border-radius: 8px;
-    padding: 15px;
-    margin: 15px;
-
+    padding: 24px 16px;
+    margin-bottom: 48px;
 }
 
 /*tabs*/
@@ -846,12 +852,14 @@ input {
 }
 
 /* about-us */
-.about-us{
+.about-us {
     margin-bottom: 100px;
 }
-.about-us .head{
+
+.about-us .head {
     margin-bottom: 100px;
 }
+
 .about-us h1 {
     font-size: 32px;
     font-weight: 700;
@@ -870,9 +878,11 @@ input {
 .about-us .images {
     text-align: end;
 }
-.about-us .cards{
+
+.about-us .cards {
     margin-bottom: 100px;
 }
+
 .about-us .card {
     background-color: #F2F0FB;
     padding: 24px;
@@ -903,7 +913,8 @@ input {
     color: #3A3133;
     line-height: 38px;
 }
-.about-us .card-person span{
+
+.about-us .card-person span {
     font-size: 14px;
     color: #696969;
     line-height: 26px;
