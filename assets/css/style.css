@@ -280,6 +280,7 @@ input[type="radio"] {
     margin-bottom: 40px;
     position: relative;
     line-height: 38px;
+    margin-inline-start: 20px;
 }
 
 .adding-form-instructions h2::before {
@@ -299,6 +300,7 @@ input[type="radio"] {
     color: #4C4763;
     margin: 0px;
     line-height: 30px;
+    margin-bottom: 8px;
 
 }
 
@@ -318,8 +320,8 @@ input[type="radio"] {
     font-size: 20px;
     font-weight: 700;
     color: #4C4763;
-    margin-bottom: 30px;
     position: relative;
+    margin-inline-start: 20px;
 }
 
 .adding-form-instructions h3::before {
@@ -589,14 +591,15 @@ input {
 
 .card-details ul {
     list-style-type: square;
-    text-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .card-details ul li {
-    margin: 5px 0;
+    margin: 5px 16px;
     font-size: 16px;
     font-weight: 500;
     color: #3A3133;
+    padding: 0 !important;
 }
 
 .card-details .text {
