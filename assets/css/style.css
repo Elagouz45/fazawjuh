@@ -335,22 +335,27 @@ input[type="radio"] {
     margin: 15px;
 
 }
+
 /*tabs*/
 .tab-content {
     display: none;
 }
+
 .tab-content.active {
     display: block;
     margin-top: 12px;
     margin-bottom: 50px;
 }
+
 .tab-buttons button {
     margin-right: 5px;
 }
-.active-tab{
+
+.active-tab {
     background-color: rgba(242, 240, 251, 1);
     border-radius: 32px;
 }
+
 /* form-progress-bar section*/
 
 .progress.active {
@@ -600,6 +605,7 @@ input {
     color: #4C4763;
     text-align: center;
     font-weight: 700;
+
 }
 
 .condition .card-content p {
@@ -607,7 +613,6 @@ input {
     color: #696969;
     font-weight: 400;
     text-align: center;
-
 }
 
 .condition .card {
@@ -635,6 +640,8 @@ input {
     color: #4C4763;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 8px !important;
+    line-height: 60px !important;
 }
 
 .contact-us .card-content p {
@@ -642,69 +649,121 @@ input {
     color: #696969;
     font-weight: 400;
     text-align: center;
-
+    line-height: 34px !important;
+    margin-bottom: 58px;
 }
 
 .contact-us .card {
     background-color: #F2F0FB;
-    padding: 30px 20px;
+    padding-top: 54px;
+    padding-bottom: 90px;
     border-radius: 32px;
 }
 
+/* .contact-us .card .contact-info{
+    margin-inline-start: 105px;
+} */
 .contact-us .information-card {
     background-color: #4C4763;
     border-radius: 8px;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 545px;
+
 }
 
 .contact-us .information-card .info-heading h1 {
     font-size: 24px;
     font-weight: 700;
     color: #FBFBFD;
+    padding-top: 40px;
+    padding-inline-start: 29px;
+    line-height: 45px;
 }
 
 .contact-us .information-card .info-heading span {
     font-size: 16px;
     font-weight: 400;
     color: #FBFBFD;
+    padding-top: 6px;
+    padding-inline-start: 29px;
+    line-height: 30px;
+    margin-bottom: 90px;
+}
+
+.contact-us .information-card .contact-data div {
+    padding-inline-start: 29px;
+    margin-bottom: 20px;
+
 }
 
 .contact-us .information-card .contact-data span {
     font-size: 16px;
     font-weight: 400;
     color: #FBFBFD;
+    margin-inline-start: 18px;
 }
 
 .contact-us .information-card .contact-icon {
     text-align: end;
+    margin-bottom: 40px;
+    margin-inline-end: 40px;
+    margin-inline-start: 40px;
+}
+
+.contact-us .information-card .contact-icon img {
+    margin-inline-end: 20px;
 }
 
 .input-info label {
     font-weight: 500;
     font-size: 16px;
     color: #3A3133;
+    margin-bottom: 12px;
+}
+
+.input-info input {
+    border-radius: 8px !important;
 }
 
 .input-info textarea {
-    height: 180px;
+    height: 119px;
+    border-radius: 8px !important;
+}
+
+.input-info div {
+    margin-bottom: 24px;
 }
 
 /* registration  */
-.registration h1,.support h1 {
+
+.registration {
+    margin-bottom: 120px;
+}
+
+.registration h1,
+.support h1 {
     font-size: 32px;
     font-weight: 700;
     color: #4C4763;
+    margin-bottom: 48px;
+    line-height: 60px;
+}
+
+.gender {
+    margin-bottom: 24px;
 }
 
 .gender label {
     font-weight: 500;
     font-size: 16px;
     color: #3A3133;
-    margin: 8px 0;
+    line-height: 30px;
+}
+
+.registra-btn {
+    margin-top: 48px !important;
 }
 
 .input-group .password-toggle {
@@ -719,12 +778,26 @@ input {
     /* Adjust size as needed */
 }
 
+.registration .image,
+.support .image {
+    padding: 120px;
+}
+
+.support {
+    margin-bottom: 120px;
+}
+
 /* editing-form */
+.editing-form {
+    margin-bottom: 120px;
+}
+
 .editing-form h1 {
     font-size: 32px;
     font-weight: 700;
     color: #4C4763;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
+    line-height: 60px;
 }
 
 .editing-form .edit-message textarea {
@@ -733,6 +806,7 @@ input {
     width: 90%;
     border-radius: 8px;
     background-color: white !important;
+    margin-bottom: 48px;
 }
 
 /* login-form */
@@ -746,17 +820,95 @@ input {
     font-weight: 400;
     color: #3A3133;
 }
-.login-item span{
-    font-size:16px;
+
+.login-item span {
+    font-size: 16px;
     font-weight: 400;
     color: #696969;
 }
-.change-password a{
+
+.login-form {
+    margin-bottom: 90px;
+}
+
+.login-form label {
+    margin-bottom: 12px;
+    color: #3A3133;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.change-password a {
     text-decoration: none;
-    font-size:20px;
+    font-size: 20px;
     font-weight: 700;
     color: #4076D5;
 }
+
+/* about-us */
+.about-us{
+    margin-bottom: 100px;
+}
+.about-us .head{
+    margin-bottom: 100px;
+}
+.about-us h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #4C4763;
+    margin-bottom: 16px;
+    line-height: 60px;
+}
+
+.about-us p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #3A3133;
+}
+
+.about-us .images {
+    text-align: end;
+}
+.about-us .cards{
+    margin-bottom: 100px;
+}
+.about-us .card {
+    background-color: #F2F0FB;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us .card img {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 20px;
+}
+
+.about-us .card-person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F0FB;
+    padding: 48px 24px;
+    border-radius: 8px;
+}
+
+.about-us .card-person h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #3A3133;
+    line-height: 38px;
+}
+.about-us .card-person span{
+    font-size: 14px;
+    color: #696969;
+    line-height: 26px;
+}
+
 
 /* footer */
 footer {
@@ -968,6 +1120,14 @@ footer .bottom-menu a {
 @media only screen and (max-width: 390px) {
     .row.cards-section .col-6 {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .registration .image,
+    .support .image {
+        padding: 60px;
     }
 }
 
