@@ -129,24 +129,26 @@ input[type="radio"] {
     margin-top: 29px;
 }
 
-.home-form-section .item-card .header-image .overlay:after {
+.item-card .header-image .overlay:after {
     content: '';
     width: 225px;
     height: 225px;
     background-color: rgba(76, 71, 99, 1);
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     border-radius: 50%;
     right: 15px;
     top: -12px;
 }
 
-.home-form-section .item-card .header-image img {
+.item-card .header-image img {
     background-color: rgba(178, 151, 160, 1);
     border-radius: 50%;
     padding: 5px;
     height: 225px;
     width: 225px;
+    position: relative;
+    z-index: 3;
 }
 
 .home-form-section .item-card .statics {
@@ -511,19 +513,19 @@ input {
     padding-bottom: 20px;
 }
 
-.man-form-section .header-image {
+/* .man-form-section .header-image {
     display: flex;
     justify-content: center;
     margin-top: 29px;
-}
+} */
 
-.man-form-section .item-card .header-image img {
+/* .man-form-section .item-card .header-image img {
     background-color: rgba(178, 151, 160, 1);
     border-radius: 50%;
     padding: 5px;
     height: 200px;
     width: 200px;
-}
+} */
 
 .card-man-name {
     font-size: 20px;
@@ -533,7 +535,7 @@ input {
     color: #3A3133;
 }
 
-.man-form-section.item-card .header-image .overlay:after {
+/* .man-form-section.item-card .header-image .overlay:after {
     content: '';
     width: 225px;
     height: 225px;
@@ -543,7 +545,7 @@ input {
     border-radius: 50%;
     right: 15px;
     top: -12px;
-}
+} */
 
 .man-form-section .item-card .statics .statics-content {
     border-radius: 32px;
@@ -923,7 +925,155 @@ input {
     line-height: 26px;
 }
 
+/* message */
+.message{
+    margin-bottom: 120px;
+}
+.message-card {
+    background-color: #F2F0FB;
+    border-radius: 32px;
+    padding: 40px;
+}
 
+.message-card .item-card .header-image img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.message-card .item-card .header-image .overlay:after {
+    width: 50px !important;
+    height: 50px !important;
+    right: 6px !important;
+    top: -2px !important;
+}
+.SMS-card .item-card .header-image img {
+    width: 50px !important;
+    height: 50px !important;
+}
+.SMS-card .item-card .header-image .overlay:after {
+    width: 50px !important;
+    height: 50px !important;
+    right: 6px !important;
+    top: -2px !important;
+}
+.message-card .contact-icons {
+    border: 0.4px solid #4C4763;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.message-card .man-messsage {
+    border-radius: 8px 8px 0px 8px;
+    padding: 12px;
+    background-color: #FBFBFD;
+    width: 100%;
+    margin: 0;
+    /* position: relative; */
+
+}
+
+.message-card .man-messsage h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #4C4763;
+}
+
+.message-card .man-messsage p {
+    font-size: 14px;
+    line-height: 27px;
+    color: #4C4763;
+}
+
+.message-card .card-1 {
+    margin-top: 64px;
+}
+
+
+.message-card .reject-message {
+    color: #E33E55;
+    font-size: 14px;
+    text-align: end;
+}
+
+.women-messsage {
+    border-radius: 8px 8px 0px 8px;
+    padding: 12px;
+    background-color: #4C4763;
+    width: 100%;
+    margin: 0;
+}
+.women-messsage h1{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+}
+.women-messsage p{
+    color: white;
+    font-size: 14px;
+    line-height: 27px;
+}
+.message-card .review-message ,.SMS-card p{
+    color: #4076D5    ;
+    font-size: 14px;
+    text-align: start; 
+}
+.message-card .accept-message{
+    color: #1F845A;
+    font-size: 14px;
+    text-align: start; 
+}
+.input-message{
+    width: 100%;
+    border-radius: 8px;
+    border: 0.4px solid #636464;
+}
+
+ .send{
+    position: absolute;
+    right: 93%;
+    top: 10px;
+}
+.message .SMS{
+    color: #4C4763;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+.message .All{
+    background-color: #4C4763;
+    color: white;
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 4px 12px;
+}
+.message .reading,.unread{
+    background-color: #F2F0FB;
+    color: #636464 ;
+    font-size: 14px;
+    border-radius: 32px;
+    padding: 4px 12px;
+}
+.SMS-card h3{
+    color: #3A3133 ;
+    font-size: 20px;
+    font-weight: 700;
+}
+.chat{
+    margin-top: 48px;
+}
+.chat .active{
+    background-color: rgba(181, 201, 238, 0.48) ;
+    padding: 12px;
+    border-radius: 8px;
+}
+.chat .non-active{
+    background-color: white ;
+    padding: 12px;
+    border-radius: 8px; 
+}
 /* footer */
 footer {
     background-color: rgba(76, 71, 99, 1);
