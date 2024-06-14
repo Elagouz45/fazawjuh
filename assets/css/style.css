@@ -1069,6 +1069,13 @@ input {
     padding: 12px;
     border-radius: 8px;
 }
+.chat a{
+    text-decoration: none;
+    width: 100%;
+}
+.chat .non-active:hover{
+    background-color: rgba(181, 201, 238, 0.48) ;
+}
 .chat .non-active{
     background-color: white ;
     padding: 12px;
